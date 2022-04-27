@@ -40,7 +40,17 @@ body{
     padding-right: 20px;
 }
 
-.homework > ul > li{
-    margin-top: 8px;
-    margin-bottom: 8px;
+.homework > div{
+    display: flex;
+}
+
+.homework > div > div{
+    flex: 1;
+}
+
+.homework > div > div > p{
+    font-size: large;
+    margin-left: 40px;
+    margin-top: -5px;
+    margin-bottom: -12px;
 }
