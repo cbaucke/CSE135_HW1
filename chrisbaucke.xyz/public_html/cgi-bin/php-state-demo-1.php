@@ -6,6 +6,9 @@
     </head>
     <body>
         <h1 align="center">PHP Session Form</h1>
+        <?php 
+            setcookie("NameCookie", "", time() - 3600);
+        ?>
         <form action="php-state-demo-2.php" method="post">
             <label>What is your name? <input type="text" name="username" autocomplete="off"></label>
             <br>
