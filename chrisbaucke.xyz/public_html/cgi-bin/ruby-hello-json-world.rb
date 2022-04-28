@@ -2,6 +2,8 @@
 require 'json'
 require 'cgi'
 
-http_header("application/json")
+cgi = CGI.new
 packet = {"title"=>"Hello, Ruby!", "heading"=>"Hello, Ruby!", "time"=>Time.now.inspect, "IP"=>cgi.remote_addr}
-packet.to_json
+cgi.out(
+    "Content-type" => "application/json"    
+){packet.to_json}

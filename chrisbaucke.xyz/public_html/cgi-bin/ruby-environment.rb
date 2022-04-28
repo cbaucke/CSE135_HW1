@@ -2,6 +2,9 @@
 require 'cgi'
 
 cgi = CGI.new("html4")
-puts "<html><head><title>Environment Variables</title></head><body>"
-ENV.each_pair{|key, value| puts "<p>#{key}=#{value}</p><br>"}
-puts "</body></html>"
+html = "<html><head><title>Environment Variables</title></head><body>"
+ENV.each_pair do |key, value|
+    html += "<p>#{key}=#{value}</p><br>"
+end
+html += "</body></html>"
+cgi.out("text/html"){html}
