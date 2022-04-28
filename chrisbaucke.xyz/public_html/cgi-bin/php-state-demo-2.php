@@ -17,7 +17,9 @@
             echo "Name: " . $name . "<br>";
         ?>
         <a href="php-state-demo-3.php">Session Page 2</a>
+        <br>
         <a href="php-state-demo-1.php">CGI Form</a>
+        <br>
         <form action="php-state-demo-4.php" method="post">
             <input type="submit" value="Destroy Session">
         </form>

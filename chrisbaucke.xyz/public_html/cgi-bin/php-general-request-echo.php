@@ -9,7 +9,7 @@
         <?php 
             echo "HTTP Protocol: " . $_SERVER["SERVER_PROTOCOL"] . "<br>";
             echo "HTTP Method: " . $_SERVER["REQUEST_METHOD"] . "<br>";
-            echo "Query String: " . htmlspecialchars($request) . "<br>";
+            echo "Query String: " . htmlspecialchars($_GET) . "<br>";
             echo "Message Body: " . file_get_contents("php://input") . "<br>";
         ?>
     </body>

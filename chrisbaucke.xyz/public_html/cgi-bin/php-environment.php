@@ -7,19 +7,7 @@
     <body>
         <h1 align="center">Environment Variables</h1>
         <?php 
-            $httpHdrs = get_headers();
-            foreach($httpHdrs as $key => $value){
-                echo $key . "=" . $value . "<br>";
-            }
-            unset($key);
-            unset($value);
-
-            $envVars = getenv();
-            foreach($envVars as $key => $value){
-                echo $key . "=" . $value . "<br>";
-            }
-            unset($key);
-            unset($value);
+            phpinfo(INFO_VARIABLES)
         ?>
     </body>
 </html>
