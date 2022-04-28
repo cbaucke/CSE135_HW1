@@ -8,7 +8,7 @@
         <h1 align="center">POST Request Echo</h1>
         <?php 
             $msgBody = file_get_contents("php://input");
-            echo "Message Body: " . $msgBody . PHP_EOL;
+            echo "Message Body: " . $msgBody . "\r\n";
         ?>
     </body>
 </html>

@@ -8,9 +8,9 @@
         <h1 align="center">GET Request Echo</h1>
         <?php 
             $request = $_GET;
-            echo "Query String: " . htmlspecialchars($request) . PHP_EOL;
+            echo "Query String: " . htmlspecialchars($request) . "\r\n";
             foreach($request as $key => $value){
-                echo $key . " = " . $value . PHP_EOL;
+                echo $key . " = " . $value . "\r\n";
             }
             unset($key);
             unset($value);

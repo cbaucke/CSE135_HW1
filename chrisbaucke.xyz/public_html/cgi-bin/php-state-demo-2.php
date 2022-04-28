@@ -7,9 +7,14 @@
     <body>
         <h1 align="center">PHP Session Page 1</h1>
         <?php 
-            $name = $_POST["username"];
-            setcookie("NameCookie", $name);
-            echo "Name: " . $name . PHP_EOL;
+            if(htmlspecialchars($_COOKIE["NameCookie"]) != ""){
+                $name = htmlspecialchars($_COOKIE["NameCookie"]);
+            }
+            else{
+                $name = $_POST["username"];
+                setcookie("NameCookie", $name);
+            }
+            echo "Name: " . $name . "\r\n";
         ?>
         <a href="php-state-demo-3.php">Session Page 2</a>
         <a href="php-state-demo-1.php">CGI Form</a>

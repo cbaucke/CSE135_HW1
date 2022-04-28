@@ -7,16 +7,16 @@
     <body>
         <h1 align="center">Environment Variables</h1>
         <?php 
-            $httpHdrs = get_headers()
+            $httpHdrs = get_headers();
             foreach($httpHdrs as $key => $value){
-                echo $key . "=" . $value . PHP_EOL;
+                echo $key . "=" . $value . "\r\n";
             }
             unset($key);
             unset($value);
 
-            $envVars = getenv()
+            $envVars = getenv();
             foreach($envVars as $key => $value){
-                echo $key . "=" . $value . PHP_EOL;
+                echo $key . "=" . $value . "\r\n";
             }
             unset($key);
             unset($value);
