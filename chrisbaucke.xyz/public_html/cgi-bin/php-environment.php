@@ -9,14 +9,14 @@
         <?php 
             $httpHdrs = get_headers();
             foreach($httpHdrs as $key => $value){
-                echo $key . "=" . $value . "\r\n";
+                echo $key . "=" . $value . "<br>";
             }
             unset($key);
             unset($value);
 
             $envVars = getenv();
             foreach($envVars as $key => $value){
-                echo $key . "=" . $value . "\r\n";
+                echo $key . "=" . $value . "<br>";
             }
             unset($key);
             unset($value);

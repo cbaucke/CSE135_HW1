@@ -14,7 +14,7 @@
                 $name = $_POST["username"];
                 setcookie("NameCookie", $name);
             }
-            echo "Name: " . $name . "\r\n";
+            echo "Name: " . $name . "<br>";
         ?>
         <a href="php-state-demo-3.php">Session Page 2</a>
         <a href="php-state-demo-1.php">CGI Form</a>

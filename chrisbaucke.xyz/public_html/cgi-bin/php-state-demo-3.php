@@ -8,7 +8,7 @@
         <h1 align="center">PHP Session Page 2</h1>
         <?php 
             $name = htmlspecialchars($_COOKIE["NameCookie"]);
-            echo "Name: " . $name . "\r\n";
+            echo "Name: " . $name . "<br>";
         ?>
         <a href="php-state-demo-2.php">Session Page 1</a>
         <a href="php-state-demo-1.php">CGI Form</a>
