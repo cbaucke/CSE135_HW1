@@ -9,8 +9,8 @@ int main(void)
   // Print HTML header
   printf("Cache-Control: no-cache\n");
   printf("Content-type: text/html\n\n");
-  printf("<html><head><title>Chris was Here - Hello CGI World</title></head>\
-	<body><h1 align=center>Hello HTML World</h1>\
+  printf("<html><head><title>Hello CGI World</title></head>\
+	<body><h1 align=center>Chris was Here - Hello HTML World</h1>\
   	<hr/>\n");
 
  printf("Hello World<br/>\n");
