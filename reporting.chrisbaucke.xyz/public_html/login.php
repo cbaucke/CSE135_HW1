@@ -4,7 +4,7 @@
         $username = $_POST["username"];
         //$hash = password_hash($_POST["password"], PASSWORD_DEFAULT, []);
         $hash = "password";
-        $m = new MongoClient();
+        $m = new MongoDB\Client("mongodb://localhost");
         $db = $m->users;
         $col = $db->users;
         $document = $col->findOne([
