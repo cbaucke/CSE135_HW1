@@ -16,12 +16,14 @@
         //User entered correct login info, redirect back to dashboard
         $_SESSION["username"] = $document["username"];
         $_SESSION["signedIn"] = true;
+        echo "Success, redirecting to dashboard";
         header("Location: https://reporting.chrisbaucke.xyz");
         die();
     }
     else{
         //User entered incorrect login info, have them try again
         $_SESSION["incorrect"] = true;
+        echo "Error, redirecting back to login";
         header("Location: https://reporting.chrisbaucke.xyz/login.php");
         die();
     }
