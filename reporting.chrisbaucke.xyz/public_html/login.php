@@ -3,7 +3,7 @@
     if(isset($_POST["username"]) && $_POST["username"] != "" && isset($_POST["password"]) && $_POST["password"] != ""){
         $username = $_POST["username"];
         //$hash = password_hash($_POST["password"], PASSWORD_DEFAULT, []);
-        $hash = "password"
+        $hash = "password";
         $m = new MongoClient();
         $db = $m->users;
         $col = $db->users;
