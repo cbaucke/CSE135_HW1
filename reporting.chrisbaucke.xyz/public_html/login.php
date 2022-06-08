@@ -1,4 +1,5 @@
 <?php 
+    require_once("./vendor/autoload.php");
     session_start();
     if(isset($_POST["username"]) && $_POST["username"] != "" && isset($_POST["password"]) && $_POST["password"] != ""){
         $username = $_POST["username"];
@@ -8,7 +9,7 @@
         $db = $m->users;
         $col = $db->users;
         $document = $col->findOne([
-            $or => [
+            "$or" => [
                 ["username" => $username],
                 ["email" => $username],
             ],
@@ -50,7 +51,7 @@
         <input type="submit" value="Sign in">
     </form>
     <?php 
-        if($_SESSION["incorrect"] == true){
+        if(isset($_SESSION["incorrect"]) && $_SESSION["incorrect"] == true){
           echo "<p>Incorrect login information, please try again.</p>";
         }
     ?>
