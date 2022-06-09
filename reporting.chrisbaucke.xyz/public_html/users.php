@@ -28,7 +28,7 @@
             <!-- <zg-param name="createOptions" value='{"src":"https://reporting.chrisbaucke.xyz/hash.php","method":"POST"}'></zg-param> -->
         </zg-data>
 
-        <zg-column index="id" editor="false" align="center"></zg-column>
+        <zg-column index="_id" editor="false" align="center"></zg-column>
         <zg-column index="username" align="center"></zg-column>
         <zg-column index="email" align="center"></zg-column>
         <zg-column index="admin" align="center"></zg-column>
