@@ -8,6 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 90%;
+    padding-left: 6%;
 }
 
 .pageTop > div{
@@ -19,6 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 90%;
+    padding-left: 6%;
 }
 
 .charts > div{
