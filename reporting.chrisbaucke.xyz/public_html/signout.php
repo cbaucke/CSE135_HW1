@@ -18,9 +18,8 @@
 
 <body>
   <h1>Successfully Signed Out</h1>
-  <a href="https://chrisbaucke.xyz">Home</a>
+  <a href="https://chrisbaucke.xyz">Home (Team Page)</a>
   <a href="login.php">Sign In</a>
-
 </body>
 
 </html>
