@@ -53,7 +53,7 @@
       page-size=10 
       zebra 
       columns=[{"index":"activity"}, {"index":"idleTime"}, {"index":"cursorXPos"}, {"index":"cursorYPos"}]>
-      <zg-data src="https://chrisbaucke.xyz/api/perf"></zg-data>
+      <zg-data src="https://chrisbaucke.xyz/api/activity"></zg-data>
     </zing-grid>
 
     <zg-column index="activity" align="center"></zg-column>

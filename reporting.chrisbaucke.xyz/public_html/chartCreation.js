@@ -34,7 +34,7 @@ zingchart.render({
     id: "viewsChart",
     data: viewsConfig,
     height: 400,
-    width: "40%"
+    width: "100%"
 });
 
 var browserConfig = {
@@ -67,6 +67,6 @@ var browserConfig = {
     id: 'browserChart',
     data: browserConfig,
     height: 400,
-    width: "40%"
+    width: "100%"
   });
 
