@@ -25,7 +25,7 @@
         caption="Users Grid"
         layout="row">
         <zg-data src="https://reporting.chrisbaucke.xyz/api/accounts">
-            <zg-param name="createOptions" value='{"src":"https://reporting.chrisbaucke.xyz/hash.php","method":"POST"}'></zg-param>
+            <!-- <zg-param name="createOptions" value='{"src":"https://reporting.chrisbaucke.xyz/hash.php","method":"POST"}'></zg-param> -->
         </zg-data>
 
         <zg-column index="id" editor="false" align="center"></zg-column>
