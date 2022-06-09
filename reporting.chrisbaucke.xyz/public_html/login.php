@@ -15,6 +15,7 @@
         if($document != null && $document["password"] == $hash){
             //User entered correct login info, redirect back to dashboard
             $_SESSION["username"] = $document["username"];
+            $_SESSION["admin"] = $document["admin"];
             $_SESSION["signedIn"] = true;
             $_SESSION["incorrect"] = false;
             header("Location: https://reporting.chrisbaucke.xyz");
@@ -22,9 +23,8 @@
         }
         else{
             //User entered incorrect login info, have them try again
+            $_SESSION["signedIn"] = false;
             $_SESSION["incorrect"] = true;
-            //header("Location: https://reporting.chrisbaucke.xyz/login.php");
-            //die();
         }
     }
 ?>
