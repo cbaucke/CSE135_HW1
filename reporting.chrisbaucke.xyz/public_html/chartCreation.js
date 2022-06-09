@@ -50,15 +50,18 @@ var browserConfig = {
     },
     "series": [{
         "values": [123],
-        "text": "Firefox"
+        "text": "Firefox",
+        "background-color": "#CD3D00"
       },
       {
         "values": [23],
-        "text": "Chrome"
+        "text": "Chrome",
+        "background-color": "#0F9D58"
       },
       {
         "values": [15],
-        "text": "Edge"
+        "text": "Edge",
+        "background-color": "#0078d7"
       }
     ]
   };

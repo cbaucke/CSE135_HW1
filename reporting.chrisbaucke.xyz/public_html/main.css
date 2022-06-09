@@ -5,6 +5,8 @@ body{
 
 .pageTop{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
 }
 
@@ -14,6 +16,8 @@ body{
 
 .charts{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
 }
 
