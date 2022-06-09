@@ -4,7 +4,6 @@
     if(isset($_POST["username"]) && $_POST["username"] != "" && isset($_POST["password"]) && $_POST["password"] != ""){
         $username = $_POST["username"];
         //$hash = password_hash($_POST["password"], PASSWORD_DEFAULT, []);
-        $hash = "password";
         $m = new MongoDB\Client("mongodb://localhost");
         $db = $m->users;
         $col = $db->users;
@@ -12,7 +11,7 @@
         if($document == null){
             $document = $col->findOne(["email" => $username]);
         }
-        if($document != null && $document["password"] == $hash){
+        if($document != null && password_verify($_POST["password"], $document["password"])){
             //User entered correct login info, redirect back to dashboard
             $_SESSION["username"] = $document["username"];
             $_SESSION["admin"] = $document["admin"];

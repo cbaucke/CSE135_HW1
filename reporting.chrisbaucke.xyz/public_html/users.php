@@ -20,19 +20,26 @@
 </head>
 
 <body>
+    <script>
+        <?php 
+            function _postSettings($record){
+                echo $record;
+            }
+        ?>
+    </script>
     <zing-grid
         editor-controls
         caption="Users Grid"
         layout="row">
         <zg-data src="https://reporting.chrisbaucke.xyz/api/accounts">
-            
+            <zg-param name="createOptions" value='{"body": "_postSettings"}'></zg-param>
         </zg-data>
 
-        <zg-column index="id" editor="false" align="left"></zg-column>
-        <zg-column index="username" align="left"></zg-column>
-        <zg-column index="email" align="left"></zg-column>
-        <zg-column index="admin" align="left"></zg-column>
-        <zg-column index="password" align="left"></zg-column>
+        <zg-column index="id" editor="false" align="center"></zg-column>
+        <zg-column index="username" align="center"></zg-column>
+        <zg-column index="email" align="center"></zg-column>
+        <zg-column index="admin" align="center"></zg-column>
+        <zg-column index="password" align="center"></zg-column>
     </zing-grid>
 
     <a href="https://chrisbaucke.xyz">Home (Team Page)</a>
