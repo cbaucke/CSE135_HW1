@@ -11,7 +11,9 @@
         if($document == null){
             $document = $col->findOne(["email" => $username]);
         }
-        if($document != null && password_verify($_POST["password"], $document["password"])){
+        echo $document;
+        echo $_POST["password"];
+        if($document != null && $_POST["password"] == $document["password"]){
             //User entered correct login info, redirect back to dashboard
             $_SESSION["username"] = $document["username"];
             $_SESSION["admin"] = $document["admin"];

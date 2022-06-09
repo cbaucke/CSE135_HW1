@@ -22,14 +22,19 @@
   <title>HW4 Reporting Dashboard</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
 </head>
 
 <body>
   <h1>Reporting Dashboard</h1>
-  <h2>Welcome, <?php echo $_SESSION["username"];?>!</h2>
+  <div id="browserChart"></div>
+  <script src="chartCreation.js"></script>
+
   <a href="signout.php">Sign Out</a>
+  <br>
   <?php 
     if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
+      echo "<p>" . $_SESSION["admin"] . "</p>";
       echo "<a href=\"users.php\">Manage Users</a>";
     }
   ?>
