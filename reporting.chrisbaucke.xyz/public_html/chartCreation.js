@@ -1,20 +1,20 @@
 //Note: series values are hard-coded, but do come from the actual database values
 
-let bar3Config = {
+let viewsConfig = {
     type: "bar",
     title: {
-        text: "Activity Counts of Three Users",
+        text: "Page Views for the Past Week",
         fontSize: 24
     },
     legend: {
         draggable: true
     },
     scaleX: {
-        label: {text: "Activity Type"},
-        labels: ["Mouse Movement", "Click", "Key Press"]
+        label: {text: "Day"},
+        labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     scaleY: {
-        label: {text: "Count"}
+        label: {text: "Page Views"}
     },
     plot: {
         animation: {
@@ -26,22 +26,13 @@ let bar3Config = {
     },
     series: [
         {
-            values: [7, 0, 8],
-            text: "User 1"
-        },
-        {
-            values: [7, 1, 1],
-            text: "User 2"
-        },
-        {
-            values: [6, 5, 1],
-            text: "User 3"
+            values: [0, 1, 0, 0, 1, 4, 11]
         }
     ]
 };
 zingchart.render({
-    id: "3SeriesBar",
-    data: bar3Config
+    id: "viewsChart",
+    data: viewsConfig
 });
 
 let bar2Config = {
@@ -114,6 +105,6 @@ var browserConfig = {
     id: 'browserChart',
     data: browserConfig,
     height: 400,
-    width: "100%"
+    width: "50%"
   });
 

@@ -28,13 +28,13 @@
 <body>
   <h1>Reporting Dashboard</h1>
   <div id="browserChart"></div>
+  <div id="viewsChart"></div>
   <script src="chartCreation.js"></script>
 
   <a href="signout.php">Sign Out</a>
   <br>
   <?php 
     if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
-      //echo "<p>" . $_SESSION["admin"] . "</p>";
       echo "<a href=\"users.php\">Manage Users</a>";
     }
   ?>
