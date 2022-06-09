@@ -27,25 +27,33 @@
 </head>
 
 <body>
-  <h1>Reporting Dashboard</h1>
-  <div id="browserChart"></div>
-  <div id="viewsChart"></div>
+  <div class="pageTop">
+    <div>
+      <h1>Reporting Dashboard</h1>
+    </div>
+    <div>
+      <a href="signout.php">Sign Out</a>
+      <br>
+      <?php 
+        if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
+          echo "<a href=\"users.php\">Manage Users</a>";
+        }
+      ?>
+      <a href="users.php">Temp Manage Users</a>
+    </div>
+  </div>
+
+  <div class="charts">
+    <div id="browserChart"></div>
+    <div id="viewsChart"></div>
+  </div>
   <script src="chartCreation.js"></script>
 
-  <div id="grid">
-    <zing-grid>
+  <div class="grid">
+    <zing-grid pager page-size=10>
       <zg-data src="https://chrisbaucke.xyz/api/perf"></zg-data>
     </zing-grid>
   </div>
-
-  <a href="signout.php">Sign Out</a>
-  <br>
-  <?php 
-    if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
-      echo "<a href=\"users.php\">Manage Users</a>";
-    }
-  ?>
-  <a href="users.php">Temp Manage Users</a>
 
 </body>
 

@@ -2,3 +2,19 @@ body{
     background-color: #EFEFEF;
     text-align: center;
 }
+
+.pageTop{
+    display: flex;
+}
+
+.pageTop > div{
+    flex: 1;
+}
+
+.charts{
+    display: flex;
+}
+
+.charts > div{
+    flex: 1;
+}
