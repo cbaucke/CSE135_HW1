@@ -9,4 +9,5 @@
         $col = $db->users;
         $document = $col->insertOne($_POST);
     }
+    file_put_contents("testOutput.txt", "Worked!");
 ?>
