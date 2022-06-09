@@ -26,7 +26,7 @@
 
 <body>
   <h1>Reporting Dashboard</h1>
-  <h2>Welcome, <?php echo $_SESSION["user"];?>!</h2>
+  <h2>Welcome, <?php echo $_SESSION["username"];?>!</h2>
   <script>
     document.write(`Live @ ${new Date()}`);
   </script>
