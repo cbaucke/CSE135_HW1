@@ -112,7 +112,7 @@ var browserConfig = {
    
   zingchart.render({
     id: 'browserChart',
-    data: pieConfig,
+    data: browserConfig,
     height: 400,
     width: "100%"
   });

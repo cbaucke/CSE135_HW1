@@ -34,7 +34,7 @@
   <br>
   <?php 
     if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
-      echo "<p>" . $_SESSION["admin"] . "</p>";
+      //echo "<p>" . $_SESSION["admin"] . "</p>";
       echo "<a href=\"users.php\">Manage Users</a>";
     }
   ?>
