@@ -29,10 +29,11 @@
   <h2>Welcome, <?php echo $_SESSION["username"];?>!</h2>
   <a href="signout.php">Sign Out</a>
   <?php 
-    if($_SESSION["admin"] == true){
-      echo "<a href="users.php"></a>";
+    if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
+      echo "<a href="users.php">Manage Users</a>";
     }
   ?>
+  <a href="users.php">Temp Manage Users</a>
 
 </body>
 
