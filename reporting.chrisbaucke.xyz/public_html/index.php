@@ -53,6 +53,11 @@
     <zing-grid pager page-size=10>
       <zg-data src="https://chrisbaucke.xyz/api/perf"></zg-data>
     </zing-grid>
+
+    <zg-column index="activity" align="center"></zg-column>
+    <zg-column index="idleTime" align="center"></zg-column>
+    <zg-column index="cursorXPos" align="center"></zg-column>
+    <zg-column index="cursorYPos" align="center"></zg-column>
   </div>
 
 </body>

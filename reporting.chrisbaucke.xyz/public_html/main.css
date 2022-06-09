@@ -5,6 +5,7 @@ body{
 
 .pageTop{
     display: flex;
+    width: auto;
 }
 
 .pageTop > div{
@@ -13,8 +14,13 @@ body{
 
 .charts{
     display: flex;
+    width: auto;
 }
 
 .charts > div{
     flex: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
