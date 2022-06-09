@@ -23,6 +23,7 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="main.css">
   <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,12 @@
   <div id="browserChart"></div>
   <div id="viewsChart"></div>
   <script src="chartCreation.js"></script>
+
+  <div id="grid">
+    <zing-grid>
+      <zg-data src="https://chrisbaucke.xyz/api/perf"></zg-data>
+    </zing-grid>
+  </div>
 
   <a href="signout.php">Sign Out</a>
   <br>

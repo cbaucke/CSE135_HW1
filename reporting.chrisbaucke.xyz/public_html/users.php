@@ -26,6 +26,9 @@
         layout="row">
         <zg-data src="https://reporting.chrisbaucke.xyz/api/accounts">
             <!-- <zg-param name="createOptions" value='{"src":"https://reporting.chrisbaucke.xyz/hash.php","method":"POST"}'></zg-param> -->
+            <zg-param name="updateOptions" idKey="_id"></zg-param>
+            <zg-param name="deleteOptions" idKey="_id"></zg-param>
+            <zg-param name="readOptions" idKey="_id"></zg-param>
         </zg-data>
 
         <zg-column index="_id" editor="false" align="center"></zg-column>
