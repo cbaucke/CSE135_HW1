@@ -24,7 +24,15 @@
         editor-controls
         caption="Users Grid"
         layout="row">
-        <zg-data src="https://reporting.chrisbaucke.xyz/api/accounts"></zg-data>
+        <zg-data src="https://reporting.chrisbaucke.xyz/api/accounts">
+            
+        </zg-data>
+
+        <zg-column index="id" editor="false" align="left"></zg-column>
+        <zg-column index="username" align="left"></zg-column>
+        <zg-column index="email" align="left"></zg-column>
+        <zg-column index="admin" align="left"></zg-column>
+        <zg-column index="password" align="left"></zg-column>
     </zing-grid>
 
     <a href="https://chrisbaucke.xyz">Home (Team Page)</a>
