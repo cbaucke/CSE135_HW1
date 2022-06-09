@@ -20,19 +20,12 @@
 </head>
 
 <body>
-    <script>
-        <?php 
-            function _postSettings($record){
-                echo $record;
-            }
-        ?>
-    </script>
     <zing-grid
         editor-controls
         caption="Users Grid"
         layout="row">
         <zg-data src="https://reporting.chrisbaucke.xyz/api/accounts">
-            <zg-param name="createOptions" value='{"body": "_postSettings"}'></zg-param>
+            <zg-param name="createOptions" value='{"src":"https://reporting.chrisbaucke.xyz/hash.php"}'></zg-param>
         </zg-data>
 
         <zg-column index="id" editor="false" align="center"></zg-column>
