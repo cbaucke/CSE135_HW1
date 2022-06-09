@@ -35,7 +35,7 @@
         <zg-column index="username" align="center"></zg-column>
         <zg-column index="email" align="center"></zg-column>
         <zg-column index="admin" align="center"></zg-column>
-        <zg-column index="password" align="center"></zg-column>
+        <zg-column index="password" align="center" type="password"></zg-column>
     </zing-grid>
 
     <a href="https://chrisbaucke.xyz">Home (Team Page)</a>

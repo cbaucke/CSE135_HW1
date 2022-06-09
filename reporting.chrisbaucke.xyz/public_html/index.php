@@ -39,7 +39,6 @@
           echo "<a href=\"users.php\">Manage Users</a>";
         }
       ?>
-      <a href="users.php">Temp Manage Users</a>
     </div>
   </div>
 
@@ -50,7 +49,10 @@
   <script src="chartCreation.js"></script>
 
   <div class="grid">
-    <zing-grid pager page-size=10>
+    <zing-grid pager
+      page-size=10 
+      zebra 
+      columns=[{"index":"activity"}, {"index":"idleTime"}, {"index":"cursorXPos"}, {"index":"cursorYPos"}]>
       <zg-data src="https://chrisbaucke.xyz/api/perf"></zg-data>
     </zing-grid>
 
