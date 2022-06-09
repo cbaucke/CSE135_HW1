@@ -8,13 +8,11 @@
         $m = new MongoDB\Client("mongodb://localhost");
         $db = $m->users;
         $col = $db->users;
-        $document = $col->findOne([
-            "$or" => [
-                ["username" => $username],
-                ["email" => $username],
-            ],
-        ]);
-        if($document["password"] == $hash){
+        $document = $col->findOne(["username" => $username]);
+        if($document == null){
+            $document = $col->findOne(["email" => $username]);
+        }
+        if($document != null && $document["password"] == $hash){
             //User entered correct login info, redirect back to dashboard
             $_SESSION["username"] = $document["username"];
             $_SESSION["signedIn"] = true;
