@@ -30,7 +30,7 @@
   <a href="signout.php">Sign Out</a>
   <?php 
     if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true){
-      echo "<a href="users.php">Manage Users</a>";
+      echo "<a href=\"users.php\">Manage Users</a>";
     }
   ?>
   <a href="users.php">Temp Manage Users</a>
