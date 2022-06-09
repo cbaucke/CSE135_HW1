@@ -27,6 +27,7 @@
 <body>
   <h1>Reporting Dashboard</h1>
   <h2>Welcome, <?php echo $_SESSION["username"];?>!</h2>
+  <a href="signout.php">Sign Out</a>
   <script>
     document.write(`Live @ ${new Date()}`);
   </script>

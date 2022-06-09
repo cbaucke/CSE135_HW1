@@ -35,7 +35,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW4 Login</title>
+    <title>HW4 Sign in</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -46,11 +46,11 @@
         <label>Username or Email: <input type="text" name="username" autocomplete="off"></label>
         <br>
         <label>Password: <input type="password" name="password" autocomplete="off"></label>
-        <input type="submit" value="Sign in">
+        <input type="submit" value="Sign In">
     </form>
     <?php 
         if(isset($_SESSION["incorrect"]) && $_SESSION["incorrect"] == true){
-          echo "<p>Incorrect login information, please try again.</p>";
+          echo "<p>Incorrect account information, please try again.</p>";
         }
     ?>
 </body>
