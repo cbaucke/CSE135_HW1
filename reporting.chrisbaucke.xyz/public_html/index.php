@@ -51,8 +51,7 @@
   <div class="grid">
     <zing-grid pager
       page-size=10 
-      zebra 
-      columns=[{"index":"activity"}, {"index":"idleTime"}, {"index":"cursorXPos"}, {"index":"cursorYPos"}]>
+      zebra>
       <zg-data src="https://chrisbaucke.xyz/api/activity"></zg-data>
     </zing-grid>
 
